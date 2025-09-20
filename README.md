@@ -1,5 +1,4 @@
 # authn_hub
-
 Unified Authentication System — SSO + Local Auth + Custom Token Management
 
 🚀 Overview
@@ -21,6 +20,7 @@ This repo is designed for developers who want a starter authentication system wi
 	Database	EF Core (SQL Server / PostgreSQL optional)
 	Documentation	Mermaid diagrams + Markdown
 
+```
 📁 Repository Structure
 /authn_hub
 │
@@ -49,6 +49,7 @@ This repo is designed for developers who want a starter authentication system wi
 │
 ├── .gitignore
 └── README.md
+```
 
 🔹 Features
 Unified login endpoints
