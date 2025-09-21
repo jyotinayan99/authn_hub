@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "backend.Server.Controllers.AuthController",
+    "Method": "LoginCustomAsync",
+    "RelativePath": "Auth/login/custom",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "backend.Models.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend.Server.Controllers.AuthController",
+    "Method": "LoginRawAsync",
+    "RelativePath": "Auth/login/raw",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "backend.Models.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend.Server.Controllers.AuthController",
+    "Method": "LoginCustomOidcAsync",
+    "RelativePath": "Auth/oidc-exchange-custom",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "backend.Models.DTOs.OidcExchangeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "backend.Server.Controllers.AuthController",
+    "Method": "LoginRawOidcAsync",
+    "RelativePath": "Auth/oidc-exchange-raw",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "backend.Models.DTOs.OidcExchangeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

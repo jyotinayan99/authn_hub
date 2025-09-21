@@ -1,0 +1,4 @@
+body { font-family: Arial, Helvetica, sans-serif; margin: 20px; }
+.app nav { margin-bottom: 16px; }
+form { max-width: 400px; }
+input, button { padding: 8px; margin: 6px 0; width: 100%; box-sizing: border-box; }

@@ -1,0 +1,13 @@
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\bin\Debug\net8.0\backend.Models.deps.json
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\bin\Debug\net8.0\backend.Models.dll
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\bin\Debug\net8.0\backend.Models.pdb
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\obj\Debug\net8.0\backend.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\obj\Debug\net8.0\backend.Models.AssemblyInfoInputs.cache
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\obj\Debug\net8.0\backend.Models.AssemblyInfo.cs
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\obj\Debug\net8.0\backend.Models.csproj.CoreCompileInputs.cache
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\obj\Debug\net8.0\backend.Models.sourcelink.json
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\obj\Debug\net8.0\backend.Models.dll
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\obj\Debug\net8.0\refint\backend.Models.dll
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\obj\Debug\net8.0\backend.Models.pdb
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\obj\Debug\net8.0\ref\backend.Models.dll
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Models\obj\Debug\net8.0\backend.Models.csproj.AssemblyReference.cache

@@ -1,0 +1,16 @@
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\bin\Debug\net8.0\backend.Services.deps.json
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\bin\Debug\net8.0\backend.Services.dll
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\bin\Debug\net8.0\backend.Services.pdb
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\bin\Debug\net8.0\backend.Models.dll
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\bin\Debug\net8.0\backend.Models.pdb
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\backend.Services.csproj.AssemblyReference.cache
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\backend.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\backend.Services.AssemblyInfoInputs.cache
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\backend.Services.AssemblyInfo.cs
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\backend.Services.csproj.CoreCompileInputs.cache
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\backend.Services.sourcelink.json
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\backend..3569E4AF.Up2Date
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\backend.Services.dll
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\refint\backend.Services.dll
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\backend.Services.pdb
+D:\Projects\IdentityManagement\authn_hub\backend\backend\backend.Services\obj\Debug\net8.0\ref\backend.Services.dll
