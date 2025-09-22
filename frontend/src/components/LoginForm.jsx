@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { loginCustom, loginRaw, redirectToOIDCLogin } from "../services/authService";
+import { loginCustom, loginRaw, redirectToOIDCLogin, redirectToFederatedOIDCLogin } from "../services/authService";
 import { useToken } from "../contexts/TokenContext";
 
 export default function LoginForm() {
@@ -41,11 +41,6 @@ export default function LoginForm() {
     }
   }
 
-  function doOIDC() {
-    // just redirect to KC login page
-    redirectToOIDCLogin();
-  }
-
   return (
     <form onSubmit={(e) => e.preventDefault()}>
       <h2>Login (POC)</h2>
@@ -53,17 +48,16 @@ export default function LoginForm() {
       <input value={username} onChange={e => setUsername(e.target.value)} />
       <label>Password</label>
       <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
-      
-      <div style={{display:"flex", gap:8, marginTop:12}}>
+
+      <div style={{ display: "flex", gap: 8, marginTop: 16, flexWrap: "wrap" }}>
         <button type="button" onClick={doCustom} disabled={loading}>Login (custom)</button>
         <button type="button" onClick={doRaw} disabled={loading}>Login (raw)</button>
         <button type="button" onClick={() => redirectToOIDCLogin("custom")}>Login OIDC (custom)</button>
         <button type="button" onClick={() => redirectToOIDCLogin("raw")}>Login OIDC (raw)</button>
+        <button type="button" onClick={() => redirectToFederatedOIDCLogin("custom")}>Login via Federated IdP</button>
       </div>
 
-      
-
-      {error && <div style={{color:'red', marginTop:8}}>Error: {String(error)}</div>}
+      {error && <div style={{ color: "red", marginTop: 8 }}>Error: {String(error)}</div>}
     </form>
   );
 }

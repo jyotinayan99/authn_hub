@@ -15,7 +15,7 @@ export default function Callback() {
     async function handleOIDC() {
       const params = new URLSearchParams(search);
       const code = params.get("code");
-      const state = params.get("state") || "custom"; // default to custom
+      const state = params.get("state") || "custom"; // default to custom if not provided
 
       if (!code) {
         setError("No authorization code found in URL");
@@ -24,18 +24,23 @@ export default function Callback() {
       }
 
       try {
+        // dynamically call backend based on state (raw/custom)
         const res = await exchangeOIDCCode(code, state);
+
         setAccessToken(res.accessToken || res.access_token);
         setRefreshToken(res.refreshToken || res.refresh_token);
+
+        // redirect to dashboard
         navigate("/dashboard", { replace: true });
       } catch (err) {
-        setError(err.body || err.message);
+        setError(err.body || err.message || "OIDC token exchange failed");
       } finally {
         setLoading(false);
       }
     }
-      handleOIDC();
-    }, [search, setAccessToken, setRefreshToken, navigate]);
+
+    handleOIDC();
+  }, [search, setAccessToken, setRefreshToken, navigate]);
 
   if (error) {
     return <div style={{ color: "red" }}>OIDC Error: {String(error)}</div>;

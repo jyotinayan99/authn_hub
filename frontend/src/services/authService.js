@@ -39,7 +39,7 @@ export async function getProfile(accessToken) {
 
 /**
  * Redirect user to Keycloak login page
- * @param {"raw"|"custom"} type - determines which backend flow to call after callback
+ * @param {"raw"|"custom"} type - determines which backend endpoint will be used after code exchange
  */
 export function redirectToOIDCLogin(type = "custom") {
   const kcAuthUrl = `${import.meta.env.VITE_KC_BASE}/realms/${import.meta.env.VITE_KC_REALM}/protocol/openid-connect/auth?` +
@@ -48,10 +48,26 @@ export function redirectToOIDCLogin(type = "custom") {
       redirect_uri: import.meta.env.VITE_KC_REDIRECT,
       response_type: "code",
       scope: "openid profile email",
-      state: type // pass "raw" or "custom" to callback
+      state: type // will tell callback which backend flow to use
     });
 
   window.location.href = kcAuthUrl;
+}
+
+/**
+ * Redirect user to federated IdP login
+ */
+export function redirectToFederatedOIDCLogin(type = "custom") {
+  const federatedUrl = `${import.meta.env.VITE_KC_BASE}/realms/${import.meta.env.VITE_KC_REALM}/broker/${import.meta.env.VITE_KC_FED_CLIENT}/endpoint?` +
+    new URLSearchParams({
+      client_id: import.meta.env.VITE_KC_CLIENT,
+      redirect_uri: import.meta.env.VITE_KC_REDIRECT,
+      response_type: "code",
+      scope: "openid profile email",
+      state: type
+    });
+
+  window.location.href = federatedUrl;
 }
 
 /**
@@ -62,7 +78,6 @@ export function redirectToOIDCLogin(type = "custom") {
 export async function exchangeOIDCCode(code, type = "custom") {
   if (!code) throw new Error("Authorization code is required");
 
-  // Choose backend endpoint based on type
   const endpoint = type === "custom"
     ? "/auth/oidc-exchange-custom"
     : "/auth/oidc-exchange-raw";
